@@ -62,10 +62,10 @@ Begin the graphical XOOPS installation procedure by pointing your browser at [ht
 
 1. Click 'Next' to go to the next screen.  
 
-    [![](xoops-on-iis/_static/image2.png)](xoops-on-iis/_static/image1.png)
+    ![Screenshot of a browser window with the XXOPS Install Wizard open in a tab.](xoops-on-iis/_static/image2.png)
 2. Proceed through the installation screens until you get to the most important page-- the setup for configuring the database connection. Fill in the information as appropriate:  
 
-    [![](xoops-on-iis/_static/image4.png)](xoops-on-iis/_static/image3.png)
+    ![Screenshot of a browser window with the XXOPS General configuration page open in a tab.](xoops-on-iis/_static/image4.png)
 
     > [!NOTE]
     > The XOOPS root path is shown with the wrong slashes, but the install still works.

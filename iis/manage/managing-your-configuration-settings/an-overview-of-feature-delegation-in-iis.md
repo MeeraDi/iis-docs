@@ -67,17 +67,17 @@ Now to do the same thing in IIS Manager.
 
 1. Open IIS Manager (Start, Run, type inetmgr.exe) and click the connection to the local server in the tree view on the left side. Scroll down the feature list, find **Feature Delegation**, and double-click to open.
 
-   [![](an-overview-of-feature-delegation-in-iis/_static/image2.jpg)](an-overview-of-feature-delegation-in-iis/_static/image1.jpg)
+   [![Screenshot of the I I S Manager window. A Home panel is open with Feature Delegation highlighted.](an-overview-of-feature-delegation-in-iis/_static/image2.jpg)](an-overview-of-feature-delegation-in-iis/_static/image1.jpg)
 2. The Feature Delegation page shows all the features and their default delegation state for all sites ("features" means all the items that appear in the home page feature list). Try Grouping by Delegation.
 
-   [![](an-overview-of-feature-delegation-in-iis/_static/image4.jpg)](an-overview-of-feature-delegation-in-iis/_static/image3.jpg)
+   [![Screenshot of the I I S Manager window with the Feature Delegation pane open. Delegation is selected.](an-overview-of-feature-delegation-in-iis/_static/image4.jpg)
 3. Notice that most of the IIS features like Windows Authentication and IPv4 Address and Domain Restrictions are Read Only, while ASP.NET configuration like Forms Authentication, Machine Key, and Session State are Read/Write.
 
     > [!NOTE]
     > You see the Windows Authentication, Compression, or IP and Domain Restrictions features if they are installed.
 4. Click a feature to see the delegation options in the task pane on the right.
 
-   [![](an-overview-of-feature-delegation-in-iis/_static/image6.jpg)](an-overview-of-feature-delegation-in-iis/_static/image5.jpg)
+   ![Screenshot of the I I S Manager window with the Feature Delegation pane open. Error Pages is selected.](an-overview-of-feature-delegation-in-iis/_static/image6.jpg)
 
    Error Pagescan be set to Read/Write.
 
@@ -85,11 +85,12 @@ Now to do the same thing in IIS Manager.
    - Both Read Only and Remove Delegation mean that the feature's corresponding configuration section is locked and cannot be configured in web.config without causing runtime errors.
 
    Do the same thing here as with appcmd above. When you change this delegation state, you change the default delegation for all sites.
-5. If you want to configure delegation for just one site, click the Custom Site Delegation link at the top of the task pane.[![](an-overview-of-feature-delegation-in-iis/_static/image8.jpg)](an-overview-of-feature-delegation-in-iis/_static/image7.jpg)
+5. If you want to configure delegation for just one site, click the Custom Site Delegation link at the top of the task pane.
+   ![Screenshot of the I I S Manager window. Custom Site Delegation is highlighted in the Actions pane.](an-overview-of-feature-delegation-in-iis/_static/image8.jpg)
 
    The Custom Site Delegation page displays, allows you to customize delegation for one site. This page looks similar to the Feature Delegation page, except that there is a drop-down at the top to select the site for which you want to configure delegation. This page also allows you to copy delegation from site to site to save time if you have a site with the same delegation that you want for a new site.
 
-   [![](an-overview-of-feature-delegation-in-iis/_static/image10.jpg)](an-overview-of-feature-delegation-in-iis/_static/image9.jpg) /p>
+   ![Screenshot of the I I S Manager window with the Custom Site Delegation pane open. An arrow points to the default delegation state.](an-overview-of-feature-delegation-in-iis/_static/image10.jpg) /p>
 
 <a id="03"></a>
 
